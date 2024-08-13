@@ -14,7 +14,7 @@ closeMenuButton.addEventListener("click", () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Update greeting based on time of day
+    
     const greetingElement = document.getElementById("greeting");
     const hours = new Date().getHours();
     let greeting;
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     greetingElement.textContent = greeting;
   
-    // Fetch weather information (using a placeholder function)
+    
     function fetchWeather() {
       // Simulate fetching weather data
       return new Promise((resolve) => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       weatherElement.textContent = `Current temperature: ${data.temperature}°C, Condition: ${data.condition}`;
     });
   
-    // Handle temperature unit toggle
+    
     const celsiusRadio = document.getElementById("celsius");
     const fahrRadio = document.getElementById("fahr");
   
